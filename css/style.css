@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(74, 74, 74);
+}
+
 .container {
     width: 900px;
     height: 100vh;
@@ -54,4 +58,24 @@
 
 .next{
     bottom: 0;
+}
+
+.thumbs {
+    height: 400px;
+    position: relative;
+}
+
+.thumb {
+    height: calc(400px / 5);
+    opacity: 0.5;
+}
+
+.thumb.active{
+    opacity: 1;
+}
+
+.thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
